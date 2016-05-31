@@ -9,10 +9,12 @@
 /* Begin PBXBuildFile section */
 		68F0A1491C0E12EA0066A452 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 68F0A1481C0E12EA0066A452 /* main.m */; };
 		68F0A14C1C0E12EA0066A452 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68F0A14B1C0E12EA0066A452 /* AppDelegate.m */; };
-		68F0A14F1C0E12EA0066A452 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68F0A14E1C0E12EA0066A452 /* ViewController.m */; };
 		68F0A1521C0E12EA0066A452 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68F0A1501C0E12EA0066A452 /* Main.storyboard */; };
 		68F0A1541C0E12EA0066A452 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68F0A1531C0E12EA0066A452 /* Assets.xcassets */; };
 		68F0A1571C0E12EA0066A452 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68F0A1551C0E12EA0066A452 /* LaunchScreen.storyboard */; };
+		8C65D5E01CFE290800C028D1 /* Entry.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C65D5DF1CFE290800C028D1 /* Entry.m */; };
+		8C65D5E41CFE337A00C028D1 /* EntryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C65D5E31CFE337A00C028D1 /* EntryController.m */; };
+		8C65D5E81CFE409000C028D1 /* EntryListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C65D5E71CFE409000C028D1 /* EntryListTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +22,16 @@
 		68F0A1481C0E12EA0066A452 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		68F0A14A1C0E12EA0066A452 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		68F0A14B1C0E12EA0066A452 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		68F0A14D1C0E12EA0066A452 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		68F0A14E1C0E12EA0066A452 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		68F0A1511C0E12EA0066A452 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		68F0A1531C0E12EA0066A452 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		68F0A1561C0E12EA0066A452 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		68F0A1581C0E12EA0066A452 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C65D5DE1CFE290800C028D1 /* Entry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entry.h; sourceTree = "<group>"; };
+		8C65D5DF1CFE290800C028D1 /* Entry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Entry.m; sourceTree = "<group>"; };
+		8C65D5E21CFE337A00C028D1 /* EntryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntryController.h; sourceTree = "<group>"; };
+		8C65D5E31CFE337A00C028D1 /* EntryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryController.m; sourceTree = "<group>"; };
+		8C65D5E61CFE409000C028D1 /* EntryListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntryListTableViewController.h; sourceTree = "<group>"; };
+		8C65D5E71CFE409000C028D1 /* EntryListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryListTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +66,9 @@
 			children = (
 				68F0A14A1C0E12EA0066A452 /* AppDelegate.h */,
 				68F0A14B1C0E12EA0066A452 /* AppDelegate.m */,
-				68F0A14D1C0E12EA0066A452 /* ViewController.h */,
-				68F0A14E1C0E12EA0066A452 /* ViewController.m */,
+				8C65D5E11CFE291100C028D1 /* Model */,
+				8C65D5E51CFE337E00C028D1 /* Model Controller */,
+				8C65D5E91CFE409400C028D1 /* View Controller */,
 				68F0A1501C0E12EA0066A452 /* Main.storyboard */,
 				68F0A1531C0E12EA0066A452 /* Assets.xcassets */,
 				68F0A1551C0E12EA0066A452 /* LaunchScreen.storyboard */,
@@ -77,6 +84,33 @@
 				68F0A1481C0E12EA0066A452 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8C65D5E11CFE291100C028D1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8C65D5DE1CFE290800C028D1 /* Entry.h */,
+				8C65D5DF1CFE290800C028D1 /* Entry.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		8C65D5E51CFE337E00C028D1 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8C65D5E21CFE337A00C028D1 /* EntryController.h */,
+				8C65D5E31CFE337A00C028D1 /* EntryController.m */,
+			);
+			name = "Model Controller";
+			sourceTree = "<group>";
+		};
+		8C65D5E91CFE409400C028D1 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8C65D5E61CFE409000C028D1 /* EntryListTableViewController.h */,
+				8C65D5E71CFE409000C028D1 /* EntryListTableViewController.m */,
+			);
+			name = "View Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,9 +183,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68F0A14F1C0E12EA0066A452 /* ViewController.m in Sources */,
+				8C65D5E41CFE337A00C028D1 /* EntryController.m in Sources */,
+				8C65D5E01CFE290800C028D1 /* Entry.m in Sources */,
 				68F0A14C1C0E12EA0066A452 /* AppDelegate.m in Sources */,
 				68F0A1491C0E12EA0066A452 /* main.m in Sources */,
+				8C65D5E81CFE409000C028D1 /* EntryListTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +336,7 @@
 				68F0A15D1C0E12EA0066A452 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

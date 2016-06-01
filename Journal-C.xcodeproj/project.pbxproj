@@ -15,6 +15,7 @@
 		8C65D5E01CFE290800C028D1 /* Entry.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C65D5DF1CFE290800C028D1 /* Entry.m */; };
 		8C65D5E41CFE337A00C028D1 /* EntryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C65D5E31CFE337A00C028D1 /* EntryController.m */; };
 		8C65D5E81CFE409000C028D1 /* EntryListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C65D5E71CFE409000C028D1 /* EntryListTableViewController.m */; };
+		8C65D5EF1CFE489700C028D1 /* EntryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C65D5EE1CFE489700C028D1 /* EntryDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		8C65D5E31CFE337A00C028D1 /* EntryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryController.m; sourceTree = "<group>"; };
 		8C65D5E61CFE409000C028D1 /* EntryListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntryListTableViewController.h; sourceTree = "<group>"; };
 		8C65D5E71CFE409000C028D1 /* EntryListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryListTableViewController.m; sourceTree = "<group>"; };
+		8C65D5ED1CFE489700C028D1 /* EntryDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntryDetailViewController.h; sourceTree = "<group>"; };
+		8C65D5EE1CFE489700C028D1 /* EntryDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +112,8 @@
 			children = (
 				8C65D5E61CFE409000C028D1 /* EntryListTableViewController.h */,
 				8C65D5E71CFE409000C028D1 /* EntryListTableViewController.m */,
+				8C65D5ED1CFE489700C028D1 /* EntryDetailViewController.h */,
+				8C65D5EE1CFE489700C028D1 /* EntryDetailViewController.m */,
 			);
 			name = "View Controller";
 			sourceTree = "<group>";
@@ -183,6 +188,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C65D5EF1CFE489700C028D1 /* EntryDetailViewController.m in Sources */,
 				8C65D5E41CFE337A00C028D1 /* EntryController.m in Sources */,
 				8C65D5E01CFE290800C028D1 /* Entry.m in Sources */,
 				68F0A14C1C0E12EA0066A452 /* AppDelegate.m in Sources */,

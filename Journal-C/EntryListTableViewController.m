@@ -7,6 +7,7 @@
 //
 
 #import "EntryListTableViewController.h"
+#import "EntryDetailViewController.h"
 #import "EntryController.h"
 
 @interface EntryListTableViewController ()
@@ -19,6 +20,12 @@
     [super viewDidLoad];
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+    [self.tableView reloadData];
+}
+
 #pragma mark - Table view data source
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -29,29 +36,33 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"entryCell" forIndexPath:indexPath];
     
     Entry *entry = [EntryController sharedInstance].entries[indexPath.row];
-    cell.textLabel.text = entry.name;
-    
+    cell.textLabel.text = entry.title;
     
     return cell;
 }
 
-// Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
+        
+        Entry *entry = [EntryController sharedInstance].entries[indexPath.row];
+        [[EntryController sharedInstance] removeEntry: entry];
         // Delete the row from the data source
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+    }
 }
 
 #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if ([segue.identifier isEqualToString:@"editEntry"]) {
+        EntryDetailViewController *entryDetailVC = segue.destinationViewController;
+        NSIndexPath *indexPath = self.tableView.indexPathForSelectedRow;
+        Entry *entry = [EntryController sharedInstance].entries[indexPath.row];
+        entryDetailVC.entry = entry;
+    }
 }
+
 
 
 @end

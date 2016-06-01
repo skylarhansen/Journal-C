@@ -15,6 +15,8 @@
 
 + (EntryController *)sharedInstance;
 
+- (void)addEntry:(Entry *)entry;
+- (void)removeEntry:(Entry *)entry;
 
 
 @end

@@ -14,6 +14,9 @@
 @property (nonatomic, strong) NSString *text;
 @property (nonatomic, strong) NSDate *timeStamp;
 
+@property (nonatomic, strong) NSDictionary *dictionaryCopy;
+
 - (instancetype)initWithTitle:(NSString *)title andText:(NSString *)text;
+- (instancetype)initWithDictionary:(NSDictionary *)dictionary;
 
 @end

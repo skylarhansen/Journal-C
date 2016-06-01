@@ -33,8 +33,8 @@
     
     if (entry) {
         self.entry = entry;
-        self.titleTextField = self.entry.title;
-        self.bodyTextView = self.entry.text;
+        self.titleTextField.text = self.entry.title;
+        self.bodyTextView.text = self.entry.text;
     }
 }
 
